@@ -17,17 +17,26 @@ Una gran parte del trabajo en ciencia de datos consiste en obtener datos crudos 
 
 Este proyecto de limpieza y transformación de datos en R tiene como propósito central optimizar la calidad y precisión de los datos manejados por las organizaciones. En este caso, el enfoque está en Shein, un destacado ecommerce a nivel global. Dado que los datos son esenciales para tomar decisiones estratégicas y elaborar reportes confiables, es crucial asegurarse de que estén libres de errores, duplicidades e inconsistencias.
 
-## 🎯 Ojetivo 
+## 🎯 Ojetivo del Proyecto
 
-Analizar las diferentes fuentes de datos de Shein, en este caso 21 archivos .CSV para luego, transformarlos, limpiarlos y generar fuentes de datos fidedignas que por consecuencia permitan tomar decisiones óptimas al negocio.
+Analizar las diferentes fuentes de datos de Shein, para luego, transformarlos, limpiarlos y generar una fuente de datos consolidada y fidedigna que por consecuencia, permitirá tomar decisiones óptimas al negocio.
 
-```r
-# Este script calcula la suma de dos números
+## 💡 Desarrollo del Proyecto
 
-suma <- function(a, b) { return(a + b) }
-resultado <- suma(5, 3)
-cat("La suma es:", resultado, "\n")
+### Paso 1: Recolección de datos 🗃️
+- **Fuente de los datos:** Los datos fueron obtenidos de [Kaggle](https://www.kaggle.com/datasets/oleksiimartusiuk/e-commerce-data-shein/data) en el dataset "Dirty E-Commerce Data [80,000+ Products]"
+- **Descripción:** El dataset incluye variables como `producto`, `precio`, `descuento`, `subcategoria del producto`, etc. 
+- **Formato:** [21 archivos](https://github.com/rolivaresIA/Data_Cleaning_Project/tree/main/original_databases) .CSV los cuales se consolidaron en un total de 82,105 observaciones y 13 variables.
 
-```
+### Paso 2: Limpieza de datos 🧹
+- **Modificación y estandarización de nombres de variables:** Nombres de variables con símbolos extras, mayúsculas, etc.
+- **Modificación de las clases (tipos) de variables:** Variables con clases inadecuadas.
+- **Análisis y transformación de valores faltantes en las variables:** Algunas variables presentaban 100% de NA, siendo eliminadas, otras fueron reemplazadas, etc.
 
-Ahora sigo escribiendo
+### Paso 3: Eliminación de duplicados ✂️
+- **Se identificaron y eliminaron observaciones duplicadas**
+- **Productos duplicados con diferentes precios:** Se elige el precio mayor.
+
+### Paso 4: Descarga archivo consolidado 🔗
+- Una vez limpia y transformada la data se puede descargar de la carpeta [final_database](https://github.com/rolivaresIA/Data_Cleaning_Project/tree/main/final_datebase)
+  
