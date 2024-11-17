@@ -16,13 +16,13 @@ require(tidyverse)
 #Importamos bases de datos: Consideraremos para este proyecto 21 bases de datos de productos Shein
 #(con más de 80.000 productos), están en formato CSV y estan delimitados por "," en una sola columna.
 
-us_appliance <- read_csv("shein_databases/us-shein-appliances-3987.csv")
-us_automotive <- read_csv("shein_databases/us-shein-automotive-4110.csv")
-us_baby_and_maternity <- read_csv("shein_databases/us-shein-baby_and_maternity-4433.csv")
+us_appliance <- read_csv("original_databases/us-shein-appliances-3987.csv")
+us_automotive <- read_csv("original_databases/us-shein-automotive-4110.csv")
+us_baby_and_maternity <- read_csv("original_databases/us-shein-baby_and_maternity-4433.csv")
 
 
 #Vemos que importando una por una nos demoramos mucho: Intentaremos otra cosa, para eso definimos:
-carpeta <- "shein_databases"
+carpeta <- "original_databases"
 archivos_csv <- list.files(path = carpeta, pattern = "*.csv", full.names =  TRUE)
 
 
