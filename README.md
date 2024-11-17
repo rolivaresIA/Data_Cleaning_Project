@@ -11,7 +11,7 @@ Una gran parte del trabajo en ciencia de datos consiste en obtener datos crudos 
 <li> Eliminar o completar valores faltantes, manejando datos incompletos o ausentes.
 <li> Manipular cadenas de texto para representar mejor la información contenida en los datos.
 
-![]https://github.com/rolivaresIA/Data_Cleaning_Project/blob/main/Images/datacleaning.png
+![](https://github.com/rolivaresIA/Data_Cleaning_Project/blob/main/Images/datacleaning.png)
 
 ## 📋 Descripción del Proyecto 
 
