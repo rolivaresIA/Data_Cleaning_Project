@@ -1,5 +1,15 @@
-<div align="left">
+# Proyecto de Ejemplo
 
-# Proyecto: Limpieza y Transformación de datos para un Ecommerce
+Este proyecto incluye un script en R que realiza una operación matemática. Aquí está el código:
 
-Este proyecto analiza datos históricos para predecir tendencias futuras en mercados de inversión. Usa bibliotecas de Python como **Pandas**, **NumPy**, y **Matplotlib**.
+```r
+# Este script calcula la suma de dos números
+suma <- function(a, b) {
+  return(a + b)
+}
+
+resultado <- suma(5, 3)
+cat("La suma es:", resultado, "\n")
+
+
+Este proyecto incluye un script en R que realiza una operación matemática. Aquí está el código:
